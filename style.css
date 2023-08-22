@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 2560px;
+  margin: 0 auto;
+  background: #161733;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.center {
+  width: 90%;
+  margin: auto;
+}
+.navbar {
+  display: flex;
+  gap: 800px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+li {
+  color: #fff;
+  text-align: center;
+  font-family: Oxanium;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+/* header main */
+.header-main {
+  display: flex;
+  align-items: center;
+  gap: 350px;
+}
+.left {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.title-div {
+  width: 500px;
+  padding-bottom: 50px;
+}
+.title-text {
+  color: #fff;
+  font-family: Oxanium;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.08px;
+}
+#Profit {
+  background: linear-gradient(135deg, #b0f0f2 0%, #217adb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Oxanium;
+}
+.btn-header {
+  padding-bottom: 20px;
+}
+#btn {
+  width: 327px;
+  height: 69px;
+  background: linear-gradient(135deg, #525edb 0%, #5a1c8c 100%);
+  filter: drop-shadow(0px 0px 10px #525edb);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 2px #e4e55f;
+  font-family: Oxanium;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.24px;
+  border: none;
+  border-radius: 20px;
+}
+.paragraf-header-left {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.for-more {
+  padding-top: 136px;
+  height: 19px;
+  display: flex;
+  gap: 5px;
+  background: linear-gradient(135deg, #b0f0f2 0%, #217adb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rigth {
+  display: flex;
+  width: 465px;
+  height: 446.684px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
