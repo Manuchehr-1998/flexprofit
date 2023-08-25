@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background: #161733;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .container {
   max-width: 1600px;
   margin: 0 auto;
   background: #161733;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 .center {
   width: 100%;
@@ -25,7 +30,7 @@
   list-style: none;
   gap: 20px;
 }
-li {
+li a {
   color: #fff;
   text-align: center;
   font-family: Oxanium;
@@ -34,6 +39,7 @@ li {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.36px;
+  text-decoration: none;
 }
 
 /* header main */
@@ -88,6 +94,9 @@ li {
   border: none;
   border-radius: 20px;
 }
+a {
+  text-decoration: none;
+}
 .paragraf-header-left {
   color: #fff;
   font-family: Roboto;
@@ -124,7 +133,7 @@ li {
 .main-robot {
   width: 90%;
   background: url("./assets/main-robot.svg") center no-repeat;
-  height: 100vh;
+  height: 800px;
   margin: auto;
 }
 .title-main {
@@ -443,7 +452,6 @@ li {
 }
 /* users block */
 /* accardion */
-/* Style the buttons that are used to open and close the accordion panel */
 .accardions {
   padding-bottom: 150px;
   margin: auto;
@@ -463,15 +471,16 @@ li {
 .accardion-div {
   margin-bottom: 25px;
 }
-
 .accordion {
-  color: #444;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;
   border: none;
+  text-align: left;
   outline: none;
+  font-size: 15px;
   transition: 0.4s;
   background: var(
     --invert-gradient-3,
@@ -481,28 +490,32 @@ li {
       rgba(176, 240, 242, 0.5) 100%
     )
   );
-  display: flex;
-  justify-content: space-between;
   color: #f8f8f8;
   font-family: Roboto;
-  font-size: 2vw;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 2.04px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/* .active, .accordion:hover {
-  background-color: #ccc;
-} */
+.active,
+.accordion:hover {
+  background: var(
+    --invert-gradient-3,
+    linear-gradient(
+      135deg,
+      rgba(33, 122, 219, 0.5) 0%,
+      rgba(176, 240, 242, 0.5) 100%
+    )
+  );
+}
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
-  height: 197px;
   padding: 0 18px;
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.9s ease-out;
   background: var(
     --invert-gradient-3,
     linear-gradient(
@@ -512,26 +525,33 @@ li {
     )
   );
   margin-bottom: 25px;
-  margin-top: -25;
 }
 .text-accardion {
   max-width: 713px;
   color: #f8f8f8;
   font-family: Roboto;
-  font-size: 2vw;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.7px;
   margin-left: 56px;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
+*/
+
 /* block accardion */
 /* block price */
-.blocks-price {
+.block-prices{
   width: 90%;
   margin: auto;
+}
+.blocks-price {
+  width: 100%;
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .block-price {
@@ -539,7 +559,7 @@ li {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
   justify-content: center;
 }
 .title-price {
@@ -551,6 +571,7 @@ li {
   line-height: normal;
   letter-spacing: 3.06px;
   margin-bottom: 35px;
+  text-align: center;
 }
 .trial {
   width: 400px;
@@ -636,10 +657,9 @@ li {
 .block-subscription {
   margin-bottom: 150px;
   align-items: center;
-
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
   justify-content: center;
 }
 .title-price {
@@ -832,7 +852,7 @@ li {
     --gradient-2,
     linear-gradient(135deg, #4751bd 0%, #251973 100%)
   );
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   text-align: center;
   font-family: Oxanium;
   font-size: 32px;
@@ -865,7 +885,7 @@ li {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 35px; 
+  line-height: 35px;
   text-decoration-line: underline;
 }
 .social {
