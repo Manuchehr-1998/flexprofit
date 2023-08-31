@@ -1,7 +1,4 @@
-const slider = document.querySelector('.slider');
-const cards = document.querySelectorAll('.card');
-
-slider.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
   cards.forEach(card => {
     const cardRect = card.getBoundingClientRect();
     const sliderRect = slider.getBoundingClientRect();
