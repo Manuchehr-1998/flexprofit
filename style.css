@@ -839,6 +839,9 @@ a {
   display: flex;
   gap: 15px;
 }
+.mobile-num {
+  display: none;
+}
 
 @media (max-width: 420px) {
   .container {
@@ -1051,13 +1054,19 @@ a {
   .main-robot {
     width: 90%;
     background: url("./assets/main-robot.svg") center no-repeat;
-    height: 1331px;
+    height: 1160px;
     margin: auto;
+    background-size: 148px;
   }
   .title-main {
     font-size: 16px;
   }
-
+  .desktop-num {
+    display: none;
+  }
+  .mobile-num {
+    display: block;
+  }
   /* robot-locatsiy */
   .robot-locatsiy {
     display: flex;
@@ -1099,10 +1108,10 @@ a {
 
   /*main block 2 choose */
   .choose {
-    padding-bottom: 150px;
+    padding-bottom: 70px;
     width: 90%;
     margin: auto;
-    margin-top: -380px;
+    margin-top: -440px;
   }
   .blocks-choose {
     display: flex;
@@ -1111,15 +1120,8 @@ a {
     row-gap: 41px;
   }
   .title-choose {
-    color: #fff;
-    font-family: Oxanium;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 3.4px;
-    text-align: center;
-    padding-bottom: 87px;
+    font-size: 16px;
+    padding-bottom: 37px;
   }
   /* block card*/
   .card {
@@ -1148,6 +1150,7 @@ a {
     padding-bottom: 70px;
     width: 90%;
     margin: auto;
+    padding-top: 10px;
   }
   .title-users {
     font-size: 16px;
@@ -1176,8 +1179,8 @@ a {
     width: 90%;
   }
   .svgs {
-    width: 28px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
   .faq {
     font-size: 16px;
@@ -1301,15 +1304,8 @@ a {
   }
   .title-contact {
     width: 100%;
-    text-align: center;
-    color: #fff;
-    font-family: Oxanium;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 3.06px;
-    padding-top: 45px;
+    font-size: 20px;
+    padding-top: 24px;
   }
   .input-name-email {
     display: flex;
@@ -1363,25 +1359,29 @@ a {
     margin-top: 25px;
     margin-bottom: 15px;
   }
+  .footer-logo {
+    color: #fff;
+    font-family: Quantico;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
   .text-footer {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 0px;
   }
   #text-footer {
-    color: #fff;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 35px;
-    text-decoration-line: underline;
+    font-size: 14px;
+    line-height: 20px;
   }
   .social {
-    margin-top: 25px;
-    margin-bottom: 56px;
-    display: flex;
-    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 26px;
+  }
+  .social-size{
+    width: 22px;
+    height: 19px;
   }
 }
