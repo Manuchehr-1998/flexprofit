@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -16,6 +15,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -309,13 +312,76 @@
                   <h4>
                     <span id="text-card">SMS notifications</span> <br />
                     Get notified about accepted blocks and search status.
-                    </h4>
+                  </h4>
                 </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
           <!-- 2 block -->
+          <!-- 2 block-mobile-slider -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-card">
+                    <img src="./assets/money icon.svg" alt="" />
+                  </div>
+                  <div class="text-card">
+                    <h4>
+                      <span id="text-card">Affordable pricing</span> <br />
+                      We strive to maintain our prices at a reasonable level.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-card">
+                    <img src="./assets/virtual box icon.svg" alt="" />
+                  </div>
+                  <div class="text-card">
+                    <h4>
+                      <span id="text-card">Unique Virtual machine</span> <br />
+                      We create a simulated personal phone environment to ensure
+                      the safety of your account and prevent any potential
+                      deactivation.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-card">
+                    <img src="./assets/privacy icon.svg" alt="" />
+                  </div>
+                  <div class="text-card">
+                    <h4>
+                      <span id="text-card">Your password is not required</span>
+                      <br />
+                      it's incredibly straightforward. Ensure the security of
+                      your account.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="img-card">
+                    <img src="./assets/sms icon.svg" alt="" />
+                  </div>
+                  <div class="text-card">
+                    <h4>
+                      <span id="text-card">SMS notifications</span> <br />
+                      Get notified about accepted blocks and search status.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- 2 block-mobile-slider -->
           <!-- 3 block users results -->
           <div class="users">
             <h1 class="title-users">Our users results</h1>
@@ -625,7 +691,7 @@
             </div>
             <div class="social">
               <img src="./assets/facebook.svg" alt="" class="social-size" />
-              <img src="./assets/Youtube.svg" alt="" class="social-size"/>
+              <img src="./assets/Youtube.svg" alt="" class="social-size" />
             </div>
           </div>
         </footer>
@@ -634,6 +700,7 @@
     </div>
     <script src="./appjs/burger.js"></script>
     <script src="./appjs/accardion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./appjs/script.js"></script>
   </body>
 </html>
