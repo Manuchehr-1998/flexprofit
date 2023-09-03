@@ -269,6 +269,27 @@ a {
   padding-top: 78px;
 }
 
+/*main block 2 choose mobile-slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: none !important;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*main block 2 choose */
 .choose {
   padding-bottom: 150px;
@@ -922,6 +943,7 @@ a {
     height: 500px;
     padding: 15px;
     background: #161733;
+    z-index: 1;
   }
   .menu ul {
     color: #fff;
@@ -1115,17 +1137,39 @@ a {
   }
 
   /*main block 2 choose */
+  .swiper {
+    width: 100%;
+    height: 100%;
+    display: block !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #161733;
+    margin-bottom: 50px;
+
+  }
+  .swiper-pagination {
+    top: 261px !important;
+  }
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 24px;
+    border: 6px solid rgba(47, 24, 160, 0.4)!important;  
+  }
   .choose {
-    padding-bottom: 70px;
+    padding-bottom: 15px;
     width: 90%;
     margin: auto;
     margin-top: -440px;
   }
   .blocks-choose {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    row-gap: 41px;
+    display: none;
   }
   .title-choose {
     font-size: 16px;
@@ -1133,7 +1177,7 @@ a {
   }
   /* block card*/
   .card {
-    width: 226px;
+    width: 256px;
     height: 250px;
     flex-wrap: wrap;
     gap: 0px;
@@ -1171,7 +1215,6 @@ a {
     width: 251.55px;
     height: 55px;
     padding-top: 10px;
-
   }
   .deposit,
   .price {
@@ -1389,7 +1432,7 @@ a {
     margin-top: 15px;
     margin-bottom: 26px;
   }
-  .social-size{
+  .social-size {
     width: 22px;
     height: 19px;
   }
